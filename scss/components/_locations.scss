@@ -1,0 +1,32 @@
+#locations {
+	padding: 2rem;
+
+	@include respond-to-width(1024px) {
+		@include flex-layout(column, nowrap);
+		@include flex-alignment(initial, center);
+		background-color: $primary-color-darker;
+		flex-basis: 50%;
+	}
+}
+
+#map img {
+	width: 100%;
+	height: 100%;
+
+	@include respond-to-width(1024px) {
+		width: 25vw;
+		height: auto;
+	}
+}
+
+#addresses {
+	text-align: left;
+}
+
+.address-group:first-of-type {
+	margin-top: 1rem;
+}
+
+.address-group:not(:last-of-type) {
+	margin-bottom: 1rem;
+}

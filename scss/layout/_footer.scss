@@ -1,0 +1,49 @@
+// Footer
+#footer {
+	padding: 1rem 0;
+	background-color: $tertiary-color;
+	color: $primary-color;
+	font-size: 1rem;
+	text-align: center;
+
+	& p {
+		margin-bottom: 1rem;
+		font-size: inherit;
+	}
+
+	@include respond-to-width(1024px) {
+		background-color: $primary-color;
+		color: $secondary-color;
+		font-size: 1.2rem;
+	}
+}
+
+.icon-linkedin:before {
+	content: '\eac9';
+}
+
+.icon-facebook:before {
+	content: '\ea90';
+}
+
+.icon-linkedin,
+.icon-facebook {
+	color: $primary-color;
+	font-size: 3rem;
+
+	&:hover {
+		color: $quaternary-color;
+	}
+
+	@include respond-to-width(1024px) {
+		color: $secondary-color;
+	}
+}
+
+.social-icon > a:focus > i {
+	color: $quaternary-color;
+}
+
+.social-icon:not(:last-of-type) {
+	margin-right: 1rem;
+}

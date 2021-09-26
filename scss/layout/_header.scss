@@ -1,0 +1,28 @@
+// Header
+header {
+	z-index: 100;
+	position: sticky;
+	top: 0;
+	@include flex-layout(row, nowrap);
+	@include flex-alignment(space-between, center);
+	padding: 0.6rem 2rem;
+	background-color: $primary-color;
+}
+
+.logo-img {
+	width: 7rem;
+	height: 100%;
+	transition: width 300ms ease;
+
+	&:hover {
+		@include pop-on-hover;
+	}
+
+	@include respond-to-width(1024px) {
+		width: 9rem;
+	}
+}
+
+.logo:focus .logo-img {
+	@include pop-on-hover;
+}

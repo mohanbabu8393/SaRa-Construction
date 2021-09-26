@@ -1,0 +1,84 @@
+// @font-faces:
+// Icons
+@font-face {
+	font-family: 'Icomoon';
+	src: url('../fonts/icomoon.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+	font-family: 'Icomoon';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+}
+
+@font-face {
+	font-family: 'Quicksand Medium';
+	src: url('../fonts/Quicksand-Medium.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Quicksand Bold';
+	src: url('../fonts/Quicksand-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Archivo Black';
+	src: url('../fonts/ArchivoBlack-Regular.woff') format('woff');
+}
+
+// All fonts declared:
+html {
+	font-family: 'Quicksand Medium', sans-serif;
+}
+
+input,
+select,
+textarea,
+button {
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+h1,
+.info-description > p:nth-of-type(1) {
+	font-family: 'Archivo Black', sans-serif;
+}
+
+h1 {
+	font-size: 1.7rem;
+	line-height: 1.3;
+}
+
+h2,
+h3 {
+	text-align: center;
+}
+
+h2 {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+}
+
+h3 {
+	margin: 1rem 0;
+}
+
+.menu-link,
+.location-name,
+footer p {
+	font-family: 'Quicksand Bold', sans-serif;
+}
+
+.project-description {
+	margin: 2rem 0;
+	font-size: 1.1rem;
+	line-height: 1.5;
+}

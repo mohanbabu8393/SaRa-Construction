@@ -1,0 +1,46 @@
+// Quote
+#quote {
+	color: $secondary-color;
+	text-align: center;
+	padding: 2rem;
+
+	@include respond-to-width(1024px) {
+		@include flex-layout(row, nowrap);
+		@include flex-alignment(center, center);
+
+		& h2 {
+			margin: 0;
+		}
+	}
+}
+
+.quote-container {
+	@extend %container;
+	@include respond-to-width(1024px) {
+		flex-direction: row;
+	}
+}
+
+#quote,
+.quote-link {
+	background-color: $primary-color;
+}
+
+.quote-link {
+	@extend %action-link;
+	border: $primary-border;
+
+	&:not(:first-of-type) {
+		margin-top: 2rem;
+	}
+
+	@include respond-to-width(1024px) {
+		&:not(:first-of-type) {
+			margin-top: 0;
+		}
+
+		&:first-of-type {
+			margin: 0 2rem;
+		}
+	}
+}

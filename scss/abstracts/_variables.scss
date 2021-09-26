@@ -1,0 +1,14 @@
+// Colors
+$primary-color: rgb(255, 255, 255);
+$primary-color-darker: rgb(235, 235, 235);
+$secondary-color: rgb(42, 42, 42);
+$tertiary-color: rgb(1, 147, 207);
+$tertiary-color-transparent: rgba(1, 149, 207, 0.7);
+$quaternary-color: rgb(238, 180, 20);
+
+// Outlines
+$primary-outline: 1px solid $secondary-color;
+$secondary-outline: 2px solid $secondary-color;
+
+// Borders
+$primary-border: 3px solid $secondary-color;

@@ -1,0 +1,51 @@
+#contact {
+	padding: 2rem;
+	background-color: $tertiary-color;
+	text-align: center;
+
+	& h2 {
+		color: $primary-color;
+	}
+
+	@include respond-to-width(1024px) {
+		@include flex-layout(column, nowrap);
+		@include flex-alignment(center, initial);
+		flex-basis: 50%;
+	}
+}
+
+input,
+textarea {
+	border: 1px solid $tertiary-color;
+	width: 80%;
+	max-width: 50rem;
+	padding: 1rem 0;
+	text-align: center;
+}
+
+input {
+	margin-bottom: 1rem;
+}
+
+input:focus,
+input:focus-within,
+textarea:focus,
+textarea:focus-within {
+	border: 1px solid $secondary-color;
+	box-shadow: 0 0 0 100vmax $tertiary-color-transparent;
+}
+
+.submit-button {
+	@extend %action-link;
+	margin-top: 2rem;
+
+	&:focus,
+	&:hover {
+		outline: $primary-outline;
+	}
+}
+
+// element injected via JS
+#contact-details {
+	@include flex-layout(row, nowrap);
+}

@@ -1,0 +1,24 @@
+%container {
+	@include flex-layout(column, nowrap);
+	@include flex-alignment(space-between, initial);
+}
+
+%action-link {
+	align-self: center;
+	width: 11rem;
+	padding: 1.2rem 1rem;
+	background-color: $quaternary-color;
+	font-family: 'Quicksand Bold';
+	text-align: center;
+
+	&:hover,
+	&:focus {
+		background: linear-gradient(
+				150deg,
+				rgb(250, 221, 140) 15%,
+				rgb(231, 192, 83) 40%,
+				$quaternary-color
+			)
+			70%;
+	}
+}

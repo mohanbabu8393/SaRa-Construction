@@ -1,0 +1,84 @@
+// Menu
+.hamburger {
+	@include respond-to-width(1024px) {
+		display: none;
+	}
+}
+
+.icon-menu:before {
+	content: '\e9bd';
+}
+
+.icon-x:before {
+	content: '\e905';
+}
+
+.icon-menu,
+.icon-x {
+	z-index: 10;
+	transition: color 600ms ease;
+}
+
+.icon-menu {
+	color: $secondary-color;
+	font-size: 1.9rem;
+}
+
+.icon-x {
+	color: rgb(255, 0, 0);
+	font-size: 1.77rem;
+}
+
+.menu {
+	display: none;
+	position: fixed;
+	top: 4.93rem;
+	left: 0;
+	justify-content: center;
+	width: 100%;
+	height: calc(100vh - 4.93rem);
+	background-color: $primary-color;
+	text-align: center;
+
+	@include respond-to-width(1024px) {
+		@include flex-layout(row, nowrap);
+		position: initial;
+		top: initial;
+		width: initial;
+		height: initial;
+	}
+}
+
+.menu-item {
+	border: 3px solid $tertiary-color;
+
+	&:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+
+	@include respond-to-width(1024px) {
+		border: none;
+
+		&:not(:last-child) {
+			margin: 0 2rem 0 0;
+		}
+	}
+}
+
+.menu-link {
+	display: block;
+	width: 10rem;
+	padding: 0.7rem 0;
+
+	&:hover,
+	&:focus {
+		color: $tertiary-color;
+	}
+
+	@include respond-to-width(1024px) {
+		display: initial;
+		width: initial;
+		padding: initial;
+		font-size: 1.2rem;
+	}
+}

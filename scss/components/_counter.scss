@@ -1,0 +1,20 @@
+.years,
+.completed-projects {
+	padding: 1.5rem 0;
+	font-weight: 900;
+	line-height: 2;
+	text-align: center;
+}
+
+.years {
+	background-color: $quaternary-color;
+}
+
+.completed-projects {
+	background-color: $secondary-color;
+	color: $primary-color;
+}
+
+.number {
+	font-size: 2rem;
+}
